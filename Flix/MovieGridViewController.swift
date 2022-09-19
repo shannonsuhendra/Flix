@@ -22,12 +22,12 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
         print(layout.minimumInteritemSpacing)
         print(view.frame.size.width)
         
-        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 1) / 2
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
         print(width)
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         print(layout.itemSize)
